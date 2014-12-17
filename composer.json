@@ -16,6 +16,9 @@
         "knplabs/github-api": "~1.2"
     },
     "extra": {
-        "spress_name": "Spress-github-metadata-plugin"
+        "spress_name": "Spress-github-metadata-plugin",
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
