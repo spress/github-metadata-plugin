@@ -5,3 +5,4 @@ Access to `site.github` for getting a repository's metadata.
 **Require**:
 
 * Spress >= 1.0.2
+* PHP cURL extension.
