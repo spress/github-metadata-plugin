@@ -1,0 +1,21 @@
+{
+    "name": "spress/github-metadata-plugin",
+    "type": "spress-plugin",
+    "description": "Github metadata of a repository",
+    "keywords": ["spress", "plugin", "github", "metadata"],
+    "license": "MIT",
+    "homepage": "http://spress.yosymfony.com",
+    "authors": [
+        {
+            "name": "Victor Puertas",
+            "email": "vpgugr@gmail.com"
+        }
+    ],
+    "require": {
+        "yosymfony/spress-installer": "~1.0",
+        "knplabs/github-api": "~1.2"
+    },
+    "extra": {
+        "spress_name": "Spress-github-metadata-plugin"
+    }
+}
