@@ -58,7 +58,7 @@ Another metada:
 * created_at
 * updated_at
 
-##### contributors metada
+##### Contributors metadata
 
 Access to `site.github.contributors` for getting an arra with contributors metadata.
 
@@ -70,7 +70,7 @@ See [Github repos API](https://developer.github.com/v3/repos/#list-contributors)
 * type
 * contributions
 
-##### owner metada
+##### Owner metada
 
 Access to `site.github.owner` for getting owner metadata.
 
@@ -79,7 +79,7 @@ Access to `site.github.owner` for getting owner metadata.
 * gravatar_id
 * html_url
 
-##### organization metada
+##### Organization metadata
 
 Access to `site.github.organization` for getting organization metadata.
 
@@ -87,7 +87,7 @@ Access to `site.github.organization` for getting organization metadata.
 * avatar_url
 * html_url
 
-##### source metada
+##### Source metadata
 
 Access to `site.github.source` for getting source metadata.
 
