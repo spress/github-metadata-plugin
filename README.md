@@ -33,3 +33,84 @@ repository: spress/Spress
 * **Stargazers count**: `site.github.stargazers_count`.
 * **Watchers count**: `site.gihub.watchers_count`.
 * **Forks count**: `site.github.forks_count`.
+
+See [Github repos API](https://developer.github.com/v3/repos/).
+
+Another metada:
+
+* name
+* full_name
+* description
+* fork
+* html_url
+* clone_url
+* git_url
+* ssh_url
+* mirror_url
+* homepage
+* size
+* default_branch
+* open_issues_count
+* has_issues
+* has_pages
+* has_downloads
+* pushed_at
+* created_at
+* updated_at
+
+##### contributors metada
+
+Access to `site.github.contributors` for getting an arra with contributors metadata.
+
+See [Github repos API](https://developer.github.com/v3/repos/#list-contributors).
+
+* login
+* avatar_url
+* html_url
+* type
+* contributions
+
+##### owner metada
+
+Access to `site.github.owner` for getting owner metadata.
+
+* login
+* avatar_url
+* gravatar_id
+* html_url
+
+##### organization metada
+
+Access to `site.github.organization` for getting organization metadata.
+
+* login
+* avatar_url
+* html_url
+
+##### source metada
+
+Access to `site.github.source` for getting source metadata.
+
+* name
+* full_name
+* description
+* html_url
+* clone_url
+* git_url
+* ssh_url
+* svn_url
+* mirror_url
+* homepage
+* forks_count
+* stargazers_count
+* watchers_count
+* size
+* default_branch
+* open_issues_count
+* has_issues
+* has_wiki
+* has_pages
+* has_downloads
+* pushed_at
+* created_at
+* updated_at
