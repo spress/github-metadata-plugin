@@ -16,7 +16,7 @@ Go to your Spress site and add the following to your `composer.json` and run
 
 ```json
 "require": {
-    "spress/github-metadata-plugin": "~2.0-dev"
+    "spress/github-metadata-plugin": "2.0.*"
 }
 ```
 
