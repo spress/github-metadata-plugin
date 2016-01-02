@@ -4,7 +4,7 @@
 
 Access to `site.github` for getting a repository's metadata.
 
-**Require**:
+**Requires**:
 
 * Spress >=2.0
 * PHP cURL extension.
@@ -26,7 +26,7 @@ Add the following to your `config.yml`:
 
 ```yaml
 #Your repository's name:
-repository: spress/Spress
+repository: "spress/Spress"
 
 ```
 
