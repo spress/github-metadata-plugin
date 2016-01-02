@@ -9,6 +9,8 @@ Access to `site.github` for getting a repository's metadata.
 * Spress >=2.0
 * PHP cURL extension.
 
+If you are using Spress 1.x, go to [1.0.0](https://github.com/spress/Github-metadata-plugin/tree/v1.0.0) version of the plugin.
+
 ### How to install?
 
 Go to your Spress site and add the following to your `composer.json` and run 
