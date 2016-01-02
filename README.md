@@ -1,11 +1,15 @@
 ## Github metadata of a repository
 
+![Spress 2 ready](https://img.shields.io/badge/Spress%202-ready-brightgreen.svg)
+
 Access to `site.github` for getting a repository's metadata.
 
-**Require**:
+**Requires**:
 
-* Spress >= 1.0.2 and < 2.
+* Spress >=2.0
 * PHP cURL extension.
+
+If you are using Spress 1.x, go to [1.0.0](https://github.com/spress/Github-metadata-plugin/tree/v1.0.0) version of the plugin.
 
 ### How to install?
 
@@ -14,7 +18,7 @@ Go to your Spress site and add the following to your `composer.json` and run
 
 ```json
 "require": {
-    "spress/github-metadata-plugin": "~1.0-dev"
+    "spress/github-metadata-plugin": "2.0.*"
 }
 ```
 
@@ -24,7 +28,7 @@ Add the following to your `config.yml`:
 
 ```yaml
 #Your repository's name:
-repository: spress/Spress
+repository: "spress/Spress"
 
 ```
 

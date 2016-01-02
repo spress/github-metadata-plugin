@@ -1,11 +1,10 @@
 <?php
 
-use Symfony\Component\EventDispatcher\Event;
-use Yosymfony\Spress\Plugin\EventSubscriber;
-use Yosymfony\Spress\Plugin\Event\EnvironmentEvent;
-use Yosymfony\Spress\Plugin\Plugin;
+use Yosymfony\Spress\Core\Plugin\PluginInterface;
+use Yosymfony\Spress\Core\Plugin\EventSubscriber;
+use Yosymfony\Spress\Core\Plugin\Event\EnvironmentEvent;
 
-class SpressGithubMetadataPlugin extends Plugin
+class SpressGithubMetadataPlugin implements PluginInterface
 {
     private $io;
 
@@ -14,14 +13,24 @@ class SpressGithubMetadataPlugin extends Plugin
         $subscriber->addEventListener('spress.start', 'onStart');
     }
 
+    public function getMetas()
+    {
+        return [
+            'name' => 'spress/github-metadata-plugin',
+            'description' => 'Github metadata of a repository',
+            'author' => 'Victor Puertas',
+            'license' => 'MIT',
+        ];
+    }
+
     public function onStart(EnvironmentEvent $event)
     {
         $io = $event->getIO();
-        $config = $event->getConfigRepository();
+        $configValues = $event->getConfigValues();
 
         $io->write('Getting Github metadata...');
 
-        $repository = $this->getRepositoryComponents($config['repository']);
+        $repository = $this->getRepositoryComponents($configValues['repository']);
 
         if (2 != count($repository)) {
             $io->write('<error>Invalid repository name.</error>');
@@ -116,7 +125,9 @@ class SpressGithubMetadataPlugin extends Plugin
             ];
         }
 
-        $config['github'] = $metadata;
+        $configValues['github'] = $metadata;
+
+        $event->setConfigValues($configValues);
     }
 
     private function getRepositoryComponents($name)
