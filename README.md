@@ -24,7 +24,7 @@ spress add:plugin spress/github-metadata-plugin
 Add the following to your `config.yml`:
 
 ```yaml
-#Your repository's name:
+#Your repository name:
 repository: "spress/spress"
 
 ```
@@ -61,7 +61,7 @@ Another metadata keys:
 
 ##### Contributors metadata
 
-Access to `site.github.contributors` for getting an arra with contributors metadata.
+Access to `site.github.contributors` for getting an array with contributors metadata.
 
 See [Github repos API](https://developer.github.com/v3/repos/#list-contributors).
 
